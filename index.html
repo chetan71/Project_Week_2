@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chetan's Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body{
+            background-color: black;
+            color: #FCAF02;
+            font-family: Montserrat, sans-serif;
+        }
+        nav{
+            background-color: #FCAF02;
+            color: black;
+            display: flex;
+            align-items: center;
+            position: sticky;
+            top: 0px;
+            
+        }
+        .logo{
+            padding: 2px 4px 2px 4px;
+            margin: 3px 5px 3px 5px;
+            font-weight: 900;
+            font-size: 32px;
+        }
+        .list{
+            position: absolute;
+            right: 15px;
+        }
+        .list ul{
+            display: flex;
+            /* text-align: right; */
+            list-style-type: none;
+            font-weight: 600;
+            margin: 0px 0px 0px 10px;
+            /* align-items: center; */
+        }
+        li{
+            padding: 2px 4px 2px 4px;
+            margin: 3px 5px 3px 5px;
+            /* align-items: center; */
+        }
+        .intro{
+            color: wheat;
+            margin: 30px;
+            display: flex;
+        }
+        .intro h1{
+            font-size: 64px;
+            width: 100%;
+            height: auto;
+        }
+        img{
+            width: auto;
+            height: 486px;
+        }
+        p{
+            font-size: 28px;
+        }
+        .intro button{
+            color: black;
+            background-color: #FCAF02;
+            border: none;
+            border-radius: 30px;
+            font-size: 32px;
+            padding: 5px 80px;
+        }
+        .ContactUs{
+            margin: 30px;
+        }
+        .ContactUs h3{
+            font-weight: 700;
+            font-size: 64px;
+        }
+        .input input{
+            width: 100%;
+        }
+        .ContactUs input{
+            background-color: black;
+            color: #FCAF02;
+            border: 1px solid;
+            margin: 5px;
+            padding: 10px 25px ;
+            border-radius: 30px;
+        }
+        .submit{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .ContactUs button{
+            
+            background-color: #FCAF02;
+            font-weight: 700;
+            font-size: 32px;
+            border: none;
+            border-radius: 30px;
+            padding: 10px 40px;
+            margin: 20px;
+            /* justify-items: center; */
+        }
+        .styled-table{
+            margin: 30px;
+        }
+        table{
+            padding: 5px;
+            margin: 30px;
+            text-align: center;
+            min-width: 800px;
+            border-collapse: collapse;
+        }
+        table, thead, th, tfoot{
+            border: 2px solid;
+            padding: 5px;
+            margin: 5px;
+
+        }
+        tbody{
+            border: 2px solid #FCAF02;
+        }
+        tfoot{
+            background-color: #FCAF02;
+            color: black;
+        }
+        td{
+            border-right: 2px solid;
+            padding: 5px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">Startup</div>
+        <div class="list">
+            <ul>
+                <li>Home</li>
+                <li>About Us</li>
+                <li>Contact Us</li>
+                <li>Login</li>
+            </ul>
+        </div>
+    </nav>
+    <section class="intro">
+        <div>
+            <h1>Startup Landing Page</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <button>Login</button>
+        </div>
+        <img src="https://s3-alpha-sig.figma.com/img/1bfe/0656/5ce73b370dc5f157ffb73c5df166e15b?Expires=1722816000&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SIIsScGsHWZdcyyhDso-pmVWwvzryrmezQCSldO4dcNNjWq07zvpqCzviDf7mxEPZXD2nKklrEv20VMpv-nO7PAGMiesgJhPaaiGYCVz10YL9dFygLFrxy93kuoIImZq6HM~NERSjp7WJdXJwhmSTfhTinureeyWgyrFGtnxcMVRktu0UsF7mpnAg8Dgy1fk64QH2Wr3UmL1F0oOh~90RuZEqEa33lVGiSi3qkibB2b10o~vESrR05smhyX4F-0-XYSaKfEOV1SWSnUr04xjh9n0D3j4tEJTfgsYnau6fw~xFeURFHdPIL4ejP75lOk91ewhpCXPjoyfCuw3r2Bf3w__">
+    </section>
+    <section class="ContactUs">
+        <form action="backend.php">
+            <h3>Contact Us</h3>
+            <div class="input">
+                <input type="text" name="name" id="name" placeholder="Name">
+            </div>
+            <div class="input">
+                <input type="email" name="email" id="email" placeholder="Email">
+            </div>
+            <input type="number" name="mobno" id="mobno" placeholder="Mobile Number">
+            <input type="text" name="city" id="city" placeholder="City">
+            <div class="submit">
+                <button type="submit">Submit Form</button>
+            </div>
+        </form>
+    </section>
+    <section class="styled-table">
+
+        <table>
+            <thead>
+                <tr>
+                    <th>SNo.</th>
+                    <th>Startup Name</th>
+                    <th>Startup Discription</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>1.</td>
+                    <td>WoWIndia</td>
+                    <td>A Startup with wow ideas.</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>WoWIndia</td>
+                    <td>A Startup with wow ideas.</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>WoWIndia</td>
+                    <td>A Startup with wow ideas.</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>WoWIndia</td>
+                    <td>A Startup with wow ideas.</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>WoWIndia</td>
+                    <td>A Startup with wow ideas.</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>WoWIndia</td>
+                    <td>A Startup with wow ideas.</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td>00.</td>
+                    <td>Final Footer</td>
+                    <td>Loreum Ipsum Text.</td>
+                </tr>
+            </tfoot>
+        </table>
+    </section>
+</body>
+</html>
